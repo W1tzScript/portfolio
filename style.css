@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(
+    to left,
+    #05060A,
+    #0B1020,
+    #161A30,
+    #2A1B4A
+);
+    color: white;
+    font-family: "Finlandica Headline", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 80px;
+}
+
+.container-texts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 500px;
+}
+
+.container .eu {
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 8px 15px rgba(122, 92, 255, 0.664);
+    flex-shrink: 0;
+}
+.container h1 {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 80px;
+}
+
+.container p {
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.container-info a {
+    padding: 10px;
+    background: rgba(25, 25, 45, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(122, 92, 255, 0.35);
+    box-shadow:
+        0 0 35px rgba(122, 92, 255, 0.35),
+        0 0 80px rgba(91, 75, 138, 0.10);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.container-info a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-info img {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    margin-top: 50px;
+}
+
+.projects h1 {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 40px;
+    text-align: center;
+}
+
+.projects .cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.projects .card {
+    width: 300px;
+    height: 340px;
+    background: rgba(10, 12, 20, 0.6);
+    border: 1px solid rgba(122, 92, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.projects .card h2 {
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 40px
+}
+
+
+.projects .card a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    background: linear-gradient(135deg, #7A5CFF, #5B4B8A);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(122, 92, 255, 0.4);
+    transition: 0.5s;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.projects .card a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 65ch; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@media (max-width: 720px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container-texts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .eu {
+        height: 250px;
+    }
+    .container h1 {
+        font-size: 50px;
+    }
+    .container-texts {
+        width: 300px;
+    }
+
+    .container-info {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.container-info a {
+    padding: 15px;
+    background: rgba(25, 25, 45, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(122, 92, 255, 0.35);
+    box-shadow:
+        0 0 35px rgba(122, 92, 255, 0.35),
+        0 0 80px rgba(91, 75, 138, 0.10);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.container-info a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-info img {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5px;
+        gap: 20px;
+    }
+}
