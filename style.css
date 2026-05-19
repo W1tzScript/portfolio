@@ -19,6 +19,10 @@ body {
     font-family: "Finlandica Headline", sans-serif;
 }
 
+hr {
+  color: rgba(122, 92, 255, 0.664)
+}
+
 .container {
     display: flex;
     justify-content: center;
