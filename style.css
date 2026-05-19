@@ -20,7 +20,9 @@ body {
 }
 
 hr {
-  color: rgba(122, 92, 255, 0.664)
+  border: none;
+  height: 2px;
+  background: rgba(122, 92, 255, 0.664)
 }
 
 .container {
